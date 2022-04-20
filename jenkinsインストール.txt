@@ -1,0 +1,21 @@
+参考ページ
+
+https://it-rev-env.com/mac_in_jenkins_install/
+
+JDKのバージョンが違うため起動できない旨のエラ〜メッセージ
+
+https://qiita.com/seri_k/items/e978c1339ce51f13e297
+こちらを参考
+
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+# JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home
+
+
+管理者パスワード保管場所
+/var/root/.jenkins/secrets/initialAdminPassword
+
+jenkinsURL
+http://localhost:8080/
+
+jenkins 起動方法
+sudo java -jar /usr/local/opt/jenkins/libexec/jenkins.war
